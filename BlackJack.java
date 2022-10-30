@@ -16,7 +16,7 @@ public class BlackJack {
         for (int i = 20; i >= 0; i--) {
             for (int j = 1; j <= 10; j++) {
                 if (i + j <= 21) {
-                    dp[i] += dp[i + j] + j;
+                    dp[i] += dp[i + j] + 1;
                 } else {
                     break;
                 }
