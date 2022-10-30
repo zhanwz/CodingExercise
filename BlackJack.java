@@ -8,7 +8,7 @@ public class BlackJack {
         //  dp[i] = dp[i + 1] + 1  + dp[i + 2] + 1 + .... dp[i + 10] + 1
         // return dp[0]
         // time complexity O(21 * 10)
-        // Space: O(22) -> O(1)
+        // Space: O(22) -> O(1) can optimize to O(10)
 
         int[] dp = new int[22];
         dp[21] = 10;
